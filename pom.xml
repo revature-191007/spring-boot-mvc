@@ -5,15 +5,14 @@
 	<groupId>com.revature</groupId>
 	<artifactId>spring-boot-mvc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
+
 	<!-- Java 1.8 -->
 	<properties>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.source>1.8</maven.compiler.source>
 	</properties>
 
-	<!-- Parent pom file - used to pull in major dependencies &
-		versions -->
+	<!-- Parent pom file - used to pull in major dependencies & versions -->
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -22,6 +21,10 @@
 
 	<!-- Add typical dependencies for a web application -->
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
 		<!-- Default dependency for a spring boot webapp -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -33,9 +36,9 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
-		
-		<!-- Actuator enables actuator endpoints (used for integratino
-			with other web applications) -->
+
+		<!-- Actuator enables actuator endpoints (used for integratino with other 
+			web applications) -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
